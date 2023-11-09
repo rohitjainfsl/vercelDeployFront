@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function App() {
+  //CORS
   const [registerData, setRegisterData] = useState({ email: "", password: "" });
   const [loginData, setLoginData] = useState({ email: "", password: "" });
 
