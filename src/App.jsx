@@ -9,7 +9,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "/register",
+        "https://vercel-deploy-back-alpha.vercel.app/register",
         registerData
       );
       console.log(response.data);
@@ -22,7 +22,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "/login",
+        "https://vercel-deploy-back-alpha.vercel.app/login",
         loginData
       );
       console.log(response.data);
