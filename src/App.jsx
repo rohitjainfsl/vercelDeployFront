@@ -3,6 +3,10 @@ import axios from "axios";
 
 function App() {
   //CORS
+
+  // https://vercel-deploy-back-rohitjainfsl.vercel.app/
+  // https://vercel-deploy-back-git-main-rohitjainfsl.vercel.app/
+
   const [registerData, setRegisterData] = useState({ email: "", password: "" });
   const [loginData, setLoginData] = useState({ email: "", password: "" });
 
@@ -10,7 +14,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel-deploy-back-alpha.vercel.app/register",
+        "https://vercel-deploy-back-rohitjainfsl.vercel.app/register",
         registerData
       );
       console.log(response.data);
@@ -23,7 +27,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel-deploy-back-alpha.vercel.app/login",
+        "https://vercel-deploy-back-rohitjainfsl.vercel.app/login",
         loginData
       );
       console.log(response.data);
