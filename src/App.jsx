@@ -14,7 +14,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel-deploy-back-rohitjainfsl.vercel.app/register",
+        "https://vercel-deploy-back.onrender.com/register",
         registerData
       );
       console.log(response.data);
@@ -27,7 +27,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel-deploy-back-rohitjainfsl.vercel.app/login",
+        "https://vercel-deploy-back.onrender.com/login",
         loginData
       );
       console.log(response.data);
